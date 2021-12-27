@@ -26,6 +26,8 @@ cmake_minimum_required (VERSION 3.1)
 project(skia)
 set (CMAKE_CXX_STANDARD_REQUIRED 17)
 
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(${COSINE_BASE_DIR}/libs/zlib)
 include_directories(${COSINE_BASE_DIR}/libs/libjpeg-turbo)
 
