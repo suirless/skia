@@ -32,6 +32,7 @@ include_directories(${COSINE_BASE_DIR}/libs/zlib)
 include_directories(${COSINE_BASE_DIR}/libs/libpng)
 include_directories(${COSINE_BASE_DIR}/libs/libjpeg-turbo)
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/libs/libjpeg-turbo)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/libs/libpng)
 
 if(UNIX AND NOT APPLE)
   find_package(Freetype)
