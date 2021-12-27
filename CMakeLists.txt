@@ -26,6 +26,9 @@ cmake_minimum_required (VERSION 3.1)
 project(skia)
 set (CMAKE_CXX_STANDARD_REQUIRED 17)
 
+include_directories(${COSINE_BASE_DIR}/libs/zlib)
+include_directories(${COSINE_BASE_DIR}/libs/libjpeg-turbo)
+
 if(UNIX AND NOT APPLE)
   find_package(Freetype)
 endif()
