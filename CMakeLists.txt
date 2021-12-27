@@ -1190,7 +1190,7 @@ endif()
 target_compile_definitions(skia PRIVATE SKIA_IMPLEMENTATION=1)
 target_compile_definitions(skia PUBLIC $<$<CONFIG:Debug>:SK_DEBUG>)
 target_link_libraries(skia PUBLIC ${OTHER_LIBRARIES}
-                                  png expat zlib gif jpeg-turbo
+                                  png_static expat zlibstatic gif jpeg-turbo
                                   $<$<NOT:$<PLATFORM_ID:Windows>>:-ldl>)
 
 if(WIN32)
